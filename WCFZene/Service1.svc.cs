@@ -16,7 +16,7 @@ namespace WCFZene
     {
         public string DeleteEloado(int id)
         {
-            throw new NotImplementedException();
+            
         }
 
         public List<Eloado> GetEloadok()
@@ -26,7 +26,7 @@ namespace WCFZene
 
         public string InsertEloado(Eloado eloado)
         {
-            throw new NotImplementedException();
+            return new EloadoController().EloadoFelvitele(eloado);
         }
 
         public string UpdateEloado(Eloado eloado)
