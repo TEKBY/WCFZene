@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using WCFZene.Models;
 
 namespace WCFZene
 {
@@ -13,15 +14,18 @@ namespace WCFZene
     public interface IService1
     {
         //CRUD operations for "Eloado" entity
-        [OperationContract]
         //Create
-
+        [OperationContract]
+        string InsertEloado(Eloado eloado);
         //Read
-
+        [OperationContract]
+        List<Eloado> GetEloadok();
         //Update
-
+        [OperationContract]
+        string UpdateEloado(Eloado eloado);
         //Delete
-
+        [OperationContract]
+        string DeleteEloado(int id);
 
         // TODO: Add your service operations here
     }
