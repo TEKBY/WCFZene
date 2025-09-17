@@ -14,7 +14,7 @@ namespace WCFZene.Models
         [DataMember]
         public string Nev { get; set; }
         [DataMember]
-        public string? Nemzetiseg { get; set; }
+        public string Nemzetiseg { get; set; }
         [DataMember]
         public bool Szolo { get; set; }
 
