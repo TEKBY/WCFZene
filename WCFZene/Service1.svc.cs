@@ -16,7 +16,7 @@ namespace WCFZene
     {
         public string DeleteEloado(int id)
         {
-            
+            return new EloadoController().EloadoTorlese(id);    
         }
 
         public List<Eloado> GetEloadok()
@@ -31,7 +31,7 @@ namespace WCFZene
 
         public string UpdateEloado(Eloado eloado)
         {
-            throw new NotImplementedException();
+            return new EloadoController().EloadoModositasa(eloado);
         }
     }
 }
